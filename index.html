@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8"/>
+   <title>Customer Satisfication Survey Form</title>
+   <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+   <link rel="stylesheet" href="styles.css"/>
+ </head>
+ <body>
+   <h1 id="title">Customer Satisfication Form</h1>
+   <p id="description">Please take a moment to rate your experience with our product.</p>
+   <form id="survey-form" action="/submit-feedback" method="post">
+     <div class="container">
+<fieldset class="first">
+  <label for="name" id="name-label">Full Name:
+    <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+  </label>
+
+  <label for="number" id="number-label">Age:
+    <input type="number" id="number" name="age" placeholder="Enter your age" max="120" min="15" required/>
+  </label>
+
+  <label for="email" id="email-label">Email ID:
+    <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+  </label>
+
+  <label for="password" id="password-label">Enter your password:
+    <input type="password" id="password" name="password" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}" title="Must contain at least 8 characters, including UPPER/lowercase, number, and symbol" required/>
+  </label>
+</fieldset>
+<fieldset class="second">
+  <label>Choose a product:</label>
+  <select id="dropdown" name="product">
+
+    <option>Select item</option>
+    <option>Laptop</option>
+    <option>Smartwatch</option>
+    <option>Smartphone</option>
+    <option>Headphones</option>
+    <option>Tablet</option>
+    <option>Power Bank</option>
+    <option>Accessories</option>
+    <option>Other</option>
+  </select>
+  
+    <fieldset class="Inner-field">
+    <legend id="question2">How satisfied are you with the product?</legend>
+
+    <label for="very-satisfied">
+      <input type="radio" id="very-satisfied" name="satisfaction" value="100%" />
+      Very Satisfied
+    </label><br>
+
+    <label for="satisfied">
+      <input type="radio" id="satisfied" name="satisfaction" value="80%" />
+      Satisfied
+    </label><br>
+
+    <label for="neutral">
+      <input type="radio" id="neutral" name="satisfaction" value="50%" />
+      Neutral
+    </label><br>
+
+    <label for="dissatisfied">
+      <input type="radio" id="dissatisfied" name="satisfaction" value="0%" />
+      Dissatisfied
+    </label>
+  </fieldset>
+
+    <fieldset class="Inner-field">
+    <legend id="question1">How would you rate our customer service?</legend>
+
+    <label for="excellent">
+      <input type="radio" id="vexcellent" name="rating" value="100%" />
+      Excellent
+    </label><br>
+
+    <label for="good">
+      <input type="radio" id="good" name="rating" value="80%" />
+      Good
+    </label><br>
+
+    <label for="fair">
+      <input type="radio" id="fair" name="rating" value="50%" />
+      Fair
+    </label><br>
+
+    <label for="poor">
+      <input type="radio" id="poor" name="rating" value="0%" />
+      Poor
+    </label>
+  </fieldset>
+
+  <fieldset class="Inner-field">
+    <legend id="question3">How likely are you to recommend us to others?</legend>
+
+    <label for="recommended-excellent">
+      <input type="radio" id="recommended-excellent" name="like" value="100%" />
+      Excellent
+    </label><br>
+
+    <label for="recommended-good">
+      <input type="radio" id="recommended-good" name="like" value="80%" />
+      Good
+    </label><br>
+
+    <label for="recommended-fair">
+      <input type="radio" id="recommended-fair" name="like" value="50%" />
+      Fair
+    </label><br>
+
+    <label for="recommended-poor">
+      <input type="radio" id="recommended-poor" name="like" value="0%" />
+      Poor
+    </label>
+  </fieldset>
+
+</fieldset>
+<fieldset class="third">
+  <fieldset class="Inner-field">
+  <legend>Which aspects of the product did you find most useful?</legend>
+
+      <label><input type="checkbox" name="useful_aspects" value="Build Quality" /> Build Quality</label><br>
+      <label><input type="checkbox" name="useful_aspects" value="Performance" /> Performance</label><br>
+      <label><input type="checkbox" name="useful_aspects" value="Battery Life" /> Battery Life</label><br>
+      <label><input type="checkbox" name="useful_aspects" value="Ease of Use" /> Ease of Use</label>
+
+      <fieldset class="Inner-field">
+  <legend>What influenced your purchase decision?</legend>
+
+  <label><input type="checkbox" name="purchase_reason" value="Price" /> Price</label><br>
+  <label><input type="checkbox" name="purchase_reason" value="Brand Reputation" /> Brand Reputation</label><br>
+  <label><input type="checkbox" name="purchase_reason" value="Reviews" /> Online Reviews</label><br>
+  <label><input type="checkbox" name="purchase_reason" value="Recommendation" /> Friend/Family Recommendation</label>
+</fieldset>
+
+    </fieldset>
+
+</fieldset>
+<fieldset class="Fourth">
+  <label>Any suggestion for improvement?</label>
+  <textarea></textarea>
+  <input type="submit" id="submit"/>
+</fieldset>
+     </div>
+   </form>
+ </body>
+</html?
