@@ -1,0 +1,98 @@
+#title{
+  color: #002B5B;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+#description {
+  color: #555F61; /* slate gray */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+body{
+  margin: 0;
+  background: linear-gradient(180deg, #e0f7fa, #b3e5fc);
+}
+.container{ 
+  background-color: rgba(255,255,255, 50%);
+  width: 70%;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+.first input, #dropdown{
+  display: block;
+  max-width: 80%;
+  width: 80%;
+  height: 30px;
+  margin: 8px 0;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.first, .second, .third, .Fourth{
+  border: none;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-family: tahoma;
+  margin-top: 0;
+}
+#dropdown{
+  width: 80%;
+  height: 40px;
+}
+.Inner-field {
+  border: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.Inner-field label {
+  display: block;
+  margin-bottom: -8px;
+  font-size: 18px;
+  font-family: tahoma;
+  color: #555;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+textarea{
+  margin: 10px 0;
+  width: 400px;
+  height: 80px;
+  display: block;
+  border: 2px solid #0a0a23;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.Fourth label{
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+input[type="submit"]{
+  display: block;
+  width: 50%;
+  margin: 2em auto 1em auto;
+  height: 3em;
+  font-size: 1.1rem;
+  background-color: red;
+  border-color: white;
+  border-radius: 10px;
+  min-width: 300px;
+}
+input[type="submit"]:hover {
+  background-color: darkred;
+  color: white;
+}
